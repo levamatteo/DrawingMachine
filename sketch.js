@@ -1,19 +1,20 @@
 let noiseOffset = 0.0
 let strokeWidth = 4
-
+let bg;
 function setup() {
   createCanvas(600, 600);
   background(220, 60, 70);
-
+bg = loadImage('images/Stars1.jpg');
 
 
 }
 
 function draw() {
+background(bg);
   strokeWeight(strokeWidth);
 
   noiseOffset += 0.01
-  strokeWidth = noise(noiseOffset) * 100  
+  strokeWidth = noise(noiseOffset) * 100
   if (mouseIsPressed) {
     stroke(map(mouseX, 0, 600, 0, 210, true))
     line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);

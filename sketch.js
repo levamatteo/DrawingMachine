@@ -3,7 +3,7 @@ let strokeWidth = 4
 let img;
 let array = [];
 function preload() {
-  img = loadImage('images/stra.jpeg');
+  img = loadImage('images/NightSky.jpeg');
                   }
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -16,7 +16,7 @@ noFill();
 function draw() {
 
 
-  strokeWeight(strokeWidth);
+
 
   // noiseOffset += 0.01
   // strokeWidth = noise(noiseOffset) * 100
@@ -24,8 +24,16 @@ function draw() {
   if (mouseIsPressed) {
     //stroke(map(mouseX, 0, 600, 0, 210, true))
     // line(width - mouseX, height - mouseY, width - pmouseX, height - pmouseY);
-stroke(245, 245, 245, 100);
-// line(mouseX, mouseY, pmouseX, pmouseY);
+    strokeWeight(25)
+     stroke(184, 252, 248, 25);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+    strokeWeight(15)
+     stroke(184, 252, 248, 50);
+      line(mouseX, mouseY, pmouseX, pmouseY);
+strokeWeight(strokeWidth);
+stroke(245, 245, 245, 255);
+ line(mouseX, mouseY, pmouseX, pmouseY);
+
 array.push([mouseX, mouseY]);
   }
 }

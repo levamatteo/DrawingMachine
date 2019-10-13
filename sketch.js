@@ -3,7 +3,7 @@ let strokeWidth = 4
 let img;
 let array = [];
 function preload() {
-  img = loadImage('images/NightSky.jpeg');
+  img = loadImage('images/s.jpg');
                   }
 function setup() {
   createCanvas(windowWidth, windowHeight);

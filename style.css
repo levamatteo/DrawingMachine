@@ -4,7 +4,7 @@ html,{
   padding: 0;
 }
   .body {
-
+background-img: url("images/intro-screen.jpg");
  margin: 100px auto 0 auto;
    width: 80%;
    text-align: center;
@@ -26,7 +26,7 @@ height:100%;
 background-color: white;
 cursor: pointer;
 border:none;
-margin:none
+
   text-align: center;
   font-family: georgia, serif; font-size:20pt; font-style:italic
      color: white

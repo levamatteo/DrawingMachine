@@ -4,7 +4,7 @@ let img;
 let array = [];
 
 function preload() {
-  img = loadImage('images/s.jpg');
+  img = loadImage('images/Drawing-machinebg.jpg');
 }
 
 function setup() {

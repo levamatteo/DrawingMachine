@@ -5,12 +5,13 @@ html, {
 
 .body {
   background-image: url("images/intro-screen.jpg");
+
   margin: 100px auto 0 auto;
   width: 80%;
   text-align: center;
   font-family: georgia, serif;
   font-size: 20pt;
-
+  color: white;
 }
 
 canvas {

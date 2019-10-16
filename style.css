@@ -1,26 +1,31 @@
-html, {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
+body {
 
-.body {
-  background-image: url("images/intro-screen.jpg");
 
-  margin: 100px auto 0 auto;
-  width: 80%;
+  /* margin: 100px auto 0 auto;
+  width: 80%; */
   text-align: center;
   font-family: georgia, serif;
   font-size: 20pt;
   color: white;
 }
+.bg {
+  /* The image used */
+  background-image: url("images/intro-screen.jpg");
 
-canvas {
-  margin: auto;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .btn {
   width: 100%;
